@@ -46,4 +46,9 @@ export class RegistrationComponent {
     this._router.navigate(['/login'])
 
   }
+
+  gotologinsuccess(){
+    this._router.navigate(['/loginsuccess'])
+
+  }
 }

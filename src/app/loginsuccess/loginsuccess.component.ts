@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loginsuccess',
@@ -8,5 +9,19 @@ import { Component } from '@angular/core';
   styleUrl: './loginsuccess.component.css'
 })
 export class LoginsuccessComponent {
+  constructor(private _router : Router){}
+
+
+
+  
+gotologin(){
+  this._router.navigate(['/login'])
 
 }
+
+gotoregistration(){
+  this._router.navigate(['/registration'])
+
+}
+}
+
