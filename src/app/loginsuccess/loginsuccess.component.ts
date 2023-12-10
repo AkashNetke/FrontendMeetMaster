@@ -14,10 +14,7 @@ export class LoginsuccessComponent {
 
 
   
-gotologin(){
-  this._router.navigate(['/login'])
 
-}
 
 gotoregistration(){
   this._router.navigate(['/registration'])
