@@ -20,5 +20,9 @@ gotoregistration(){
   this._router.navigate(['/registration'])
 
 }
+gotologinsuccess(){
+  this._router.navigate(['/loginsuccess'])
+
+}
 }
 
