@@ -11,11 +11,6 @@ import { Router } from '@angular/router';
 export class LoginsuccessComponent {
   constructor(private _router : Router){}
 
-
-
-  
-
-
 gotoregistration(){
   this._router.navigate(['/registration'])
 
@@ -24,5 +19,6 @@ gotologinsuccess(){
   this._router.navigate(['/loginsuccess'])
 
 }
+
 }
 
