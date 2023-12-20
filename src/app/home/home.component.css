@@ -142,7 +142,7 @@ body {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    cursor: pointer;
+
   }
   
   .custom_nav-container .nav_search-btn {
@@ -1036,5 +1036,5 @@ body {
   .footer_section p a {
     color: inherit;
   }
-  
+
   /*# sourceMappingURL=style.css.map */
