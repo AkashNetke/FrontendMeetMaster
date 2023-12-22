@@ -6,6 +6,8 @@ import { CreatmeetingComponent } from './creatmeeting/creatmeeting.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
+import { TeammemberComponent } from './teammember/teammember.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 export const routes: Routes = [
 
@@ -18,7 +20,7 @@ export const routes: Routes = [
         component:LoginComponent
     },
     {
-        path:"register",
+        path:"registration",
         component:RegistrationComponent
     },
     {
@@ -40,6 +42,14 @@ export const routes: Routes = [
     {
         path:"service",
         component:ServiceComponent
+    },
+    {
+        path:"teammember",
+        component:TeammemberComponent
+    },
+    {
+        path:"contact",
+        component:ContactusComponent
     }
    
     

@@ -34,5 +34,11 @@ export class HomeComponent {
   gotoHome(){
     this._router.navigate(['/home'])
   }
+  gotologin(){
+    this._router.navigate(['/login'])
+  }
+  gotoRegister(){
+    this._router.navigate(['/registration'])
+  }
 }
 

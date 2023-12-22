@@ -3,6 +3,7 @@ body {
     color: #0c0c0c;
     background-color: #f8f8f8;
     overflow-x: hidden;
+    
   }
   
   .layout_padding {
@@ -142,6 +143,7 @@ body {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 
   }
   

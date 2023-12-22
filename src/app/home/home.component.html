@@ -30,9 +30,9 @@
                   </li>
               </ul>
               <div class="quote_btn-container">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="gotologin()">Login</button>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="gotoRegister()">Register</button>
               </div>
           </div>
       </nav>
@@ -68,7 +68,7 @@
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="images/slider-img.png" alt="">
+                        <img src="../../assets/slider-img.png" alt="">
                       </div>
                     </div>
                   </div>
@@ -97,7 +97,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s1.png" alt="">
+              <img src="../../assets/s1.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -117,7 +117,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s2.png" alt="">
+              <img src="../../assets/s2.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -137,7 +137,7 @@
         <div class="col-md-6 col-lg-4 ">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s3.png" alt="">
+              <img src="../../assets/s3.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -183,7 +183,7 @@
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="../../assets/about-img.png" alt="">
           </div>
         </div>
 
@@ -201,7 +201,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/server-img.jpg" alt="">
+            <img src="../../assets/server-img.jpg" alt="">
             <div class="play_btn">
               <button>
                 <i class="fa fa-play" aria-hidden="true"></i>
@@ -244,7 +244,7 @@
         <div class="box">
           <div class="detail-box">
             <div class="container">
-              <img src="images/download.jpeg" class="img-circle" alt="Cinque Terre" width="200" height="200"> 
+              <img src="../../assets/download.jpeg" class="img-circle" alt="Cinque Terre" width="200" height="200"> 
             </div>
             <ul class="price_features">
               <li>
@@ -268,7 +268,7 @@
         <div class="box">
           <div class="detail-box">
             <div class="container">
-              <img src="images/download.jpeg" class="img-circle" alt="Cinque Terre" width="200" height="200"> 
+              <img src="../../assets/download.jpeg" class="img-circle" alt="Cinque Terre" width="200" height="200"> 
             </div>
             <ul class="price_features">
               <li>
@@ -410,24 +410,24 @@
               Links
             </h4>
             <div class="info_links">
-              <a class="active" href="index.html">
-                <img src="images/nav-bullet.png" alt="">
+              <a class="active"  (click)="gotoHome()">
+                <img src="../../assets/nav-bullet.png" alt="">
                 Home
               </a>
-              <a class="" href="about.html">
-                <img src="images/nav-bullet.png" alt="">
+              <a class=""  (click)="gotoAbout()">
+                <img src="../../assets/nav-bullet.png" alt="">
                 About
               </a>
-              <a class="" href="service.html">
-                <img src="images/nav-bullet.png" alt="">
+              <a class="" (click)="gotoService()">
+                <img src="../../assets/nav-bullet.png" alt="">
                 Services
               </a>
-              <a class="" href="price.html">
-                <img src="images/nav-bullet.png" alt="">
-                Pricing
+              <a class="" (click)="gotoMember()">
+                <img src="../../assets/nav-bullet.png" alt="">
+                Members
               </a>
-              <a class="" href="contact.html">
-                <img src="images/nav-bullet.png" alt="">
+              <a class="" (click)="gotoContact()">
+                <img src="../../assets/nav-bullet.png" alt="">
                 Contact Us
               </a>
             </div>
