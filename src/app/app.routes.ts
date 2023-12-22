@@ -4,6 +4,8 @@ import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { CreatmeetingComponent } from './creatmeeting/creatmeeting.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './service/service.component';
 
 export const routes: Routes = [
 
@@ -26,7 +28,20 @@ export const routes: Routes = [
     {
         path:"createmeeting",
         component:CreatmeetingComponent
+    },
+    {
+        path:"",
+        component:HomeComponent
+    },
+    {
+        path:"about",
+        component:AboutComponent
+    },
+    {
+        path:"service",
+        component:ServiceComponent
     }
+   
     
     
 ];
