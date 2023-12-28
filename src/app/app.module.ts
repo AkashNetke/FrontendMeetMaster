@@ -17,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     HttpClientModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    
     
   ],
   providers: [
