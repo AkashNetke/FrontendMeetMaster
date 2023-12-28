@@ -5,19 +5,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegistrationService } from './registration.service';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [
-  
-
-
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HeaderComponent,
+    FooterComponent
+    
   ],
   providers: [
     RegistrationService // Add your service to the providers if needed

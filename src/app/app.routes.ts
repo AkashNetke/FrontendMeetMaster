@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { TeammemberComponent } from './teammember/teammember.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 export const routes: Routes = [
 
@@ -50,8 +52,13 @@ export const routes: Routes = [
     {
         path:"contact",
         component:ContactusComponent
-    }
-   
-    
-    
+    },
+    {
+        path:'header',
+        component:HeaderComponent
+    },
+    {
+        path:'footer',
+        component:FooterComponent
+    }  
 ];
