@@ -30,7 +30,10 @@
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.js",
-              "./node_modules/jquery/dist/jquery.js"
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/peerjs/dist/peerjs.js",
+              "./src/app/registration/main.js"
+
             ],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -95,7 +98,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [              "./src/app/registration/main.js"
+          ]
           }
         }
       }

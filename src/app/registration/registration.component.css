@@ -1,3 +1,55 @@
+ .password-form {
+  position: relative;
+}
+
+.checkbox-popup {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background:  #ffffff;
+  border: 1px solid #e9e9e9;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+  box-shadow: 0 0 10px rgb(60, 255, 1);
+} 
+
+.checkbox-label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+/* Style for checked/enabled checkboxes */
+.checkbox-label input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: green;
+}
+
+/* Optional: Customize the appearance of the checkmark inside the checkbox */
+.checkbox-label input[type="checkbox"]:checked::before {
+  content: "\2713"; /* Unicode for checkmark */
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+}
+.checkbox-popup.show {
+  display: block;
+}
+
+
+
+
+
+
 /* General styles */
 
 .hero_area {

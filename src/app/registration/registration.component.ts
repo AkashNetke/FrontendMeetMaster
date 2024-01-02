@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { User } from '../user';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NgIf } from '@angular/common';
 import { RegistrationService } from '../registration.service';
 import { error } from 'console';
@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './registration.component.css'
 })
 export class RegistrationComponent {
+[x: string]: any;
   user = new User();
   msg=' ';
   
@@ -32,7 +33,7 @@ export class RegistrationComponent {
     this._service.RegisterUserFromRemote(this.user).subscribe((data)=>{
       console.log("Response received");
       this.msg="Registration successfull";
-      this._router.navigate(['/loginsuccess'])
+      this._router.navigate(['/login'])
       
     },error=>{
       console.log("Exception occured");

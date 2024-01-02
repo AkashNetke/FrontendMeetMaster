@@ -10,6 +10,7 @@ import { TeammemberComponent } from './teammember/teammember.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { VideocallComponent } from './videocall/videocall.component';
 
 export const routes: Routes = [
 
@@ -64,5 +65,9 @@ export const routes: Routes = [
     {
         path:'footer',
         component:FooterComponent
-    }  
+    }  ,
+    {
+        path:'videocall',
+        component:VideocallComponent
+    }
 ];
