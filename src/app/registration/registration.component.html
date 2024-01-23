@@ -69,7 +69,7 @@
           >Password is an required field</small
         >
       </div> -->
-      <form action="" class="password-form">
+      <div class="form-group">
         <label for="pwd">Password:</label>
         <input
           id="password"
@@ -86,7 +86,6 @@
           onfocus="showCheckboxes()"
           onblur="hideCheckboxes()"
         />
-        <br />
         <div class="checkbox-popup" id="checkboxPopup">
           <label for="lowercase" class="checkbox-label">
             <input type="checkbox" id="lowercase" disabled /> At least one
@@ -108,7 +107,16 @@
             long
           </label>
         </div>
-      </form>
+      </div>
+
+      <button
+        class="button-13"
+        role="button"
+        onclick="togglePasswordVisibility()"
+        class="show-password-btn"
+      >
+        Show Password
+      </button>
 
       <div class="form-group">
         <label for="pwd">Confirm Password:</label>
@@ -129,6 +137,16 @@
           "
           >Password don't match</small
         >
+
+        <button
+          class="button-13"
+          role="button"
+          type="button"
+          onclick="togglePasswordVisibility()"
+          class="show-password-btn"
+        >
+          Show Password
+        </button>
       </div>
 
       <button

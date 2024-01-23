@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { User } from '../user';
+import { User } from '../models/user';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgIf } from '@angular/common';
-import { RegistrationService } from '../registration.service';
+import { RegistrationService } from '../services/registration.service';
 import { error } from 'console';
 import { HttpClientModule } from '@angular/common/http';
 

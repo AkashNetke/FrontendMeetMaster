@@ -1040,3 +1040,109 @@ body {
   }
 
   /*# sourceMappingURL=style.css.map */
+
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+  .member_section .member_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  
+  .member_section .member_container .box {
+    margin: 45px 15px 0 15px;
+  }
+  
+  .member_section .member_container .box .detail-box {
+    width: 250px;
+    padding: 40px 20px 15px 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .member_section .member_container .box .detail-box h2 {
+    font-weight: bold;
+  }
+  
+  .member_section .member_container .box .detail-box h2 span {
+    font-size: 2rem;
+  }
+  
+  .member_section .member_container .box .detail-box h6 {
+    text-transform: uppercase;
+    color: #03a7d3;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .member_section .member_container .box .member_features {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .member_section .member_container .box .member_features li {
+    margin: 10px 0;
+  }
+  
+  .member_section .member_container .box .btn-box {
+    margin-top: 25px;
+  }
+  
+  .member_section .member_container .box .btn-box a {
+    display: inline-block;
+    padding: 10px 35px;
+    background-color: #ff4646;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ff4646;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+  }
+  
+  .member_section .member_container .box .btn-box a:hover {
+    background-color: transparent;
+    color: #ff4646;
+  }
+  
+  .member_section .member_container .box .btn-box a:hover {
+    background-color: #03a7d3;
+    color: #ffffff;
+  }
+  
+  .member_section .member_container .box:hover {
+    color: #ffffff;
+  }
+  
+  .member_section .member_container .box:hover .detail-box {
+    background-color: #03a7d3;
+  }
+  
+  .member_section .member_container .box:hover h6 {
+    color: #ffffff;
+  }
+  
+  .member_section .member_container .box:hover a {
+    background-color: #03a7d3;
+    color: #ffffff;
+  }

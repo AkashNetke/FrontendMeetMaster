@@ -27,12 +27,15 @@
             "styles": [
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css"
+
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.js",
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/peerjs/dist/peerjs.js",
-              "./src/app/registration/main.js"
+              "./src/app/registration/main.js",
+              "./node_modules/agora-rtc-sdk-ng/AgoraRTC_N-production.js",
+              "./src/app/videocall/videocall.js"
 
             ],
             "server": "src/main.server.ts",
@@ -98,7 +101,14 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [              "./src/app/registration/main.js"
+            "scripts": [            
+                "./src/app/registration/main.js",
+                "./node_modules/agora-rtc-sdk-ng/AgoraRTC_N-production.js",
+                "./src/app/videocall/videocall.js"
+
+
+
+
           ]
           }
         }

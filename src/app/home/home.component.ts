@@ -1,17 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RegistrationService } from '../services/registration.service';
+import { FeedBack } from '../models/feed-back';
+import { HttpClientModule } from '@angular/common/http';
+import { FeedbackService } from '../services/feedback.service';
+import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [    HttpClientModule,
+    FormsModule
+  ],
+  providers: [FeedbackService], 
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  constructor( private _router : Router){}
 
+  feed = new FeedBack();
+
+  constructor( private _router : Router,private _service:FeedbackService){}
+  
+  saveData(){
+    this._service.saveFeed(this.feed).subscribe((data)=>{
+      console.log("Response received");
+      console.log(data);
+      
+    },error=>{
+      console.log("Exception occured");
+    });
+  };
 
   gotologinsuccess(){
     this._router.navigate(['/loginsuccess'])
@@ -41,5 +61,11 @@ export class HomeComponent {
   gotoRegister(){
     this._router.navigate(['/registration'])
   }
+
+ 
+
+  
+
+
 }
 

@@ -31,7 +31,8 @@
           >
         </div>
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
+
         <label for="pwd">Password:</label>
         <input
           type="password"
@@ -49,7 +50,59 @@
           [class.d-none]="password.valid || password.untouched"
           >Password is an required field</small
         >
-      </div>
+      </div> -->
+
+      <form class="form-group">
+        <label for="pwd">Password:</label>
+        <div>
+          <input
+            id="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+            oninput="checkPasswordComplexity()"
+            type="password"
+            class="form-control"
+            placeholder="Enter password"
+            name="pwd"
+            [(ngModel)]="user.password"
+            required
+            #password="ngModel"
+            [class.is-invalid]="password.invalid && password.touched"
+            onfocus="showCheckboxes()"
+            onblur="hideCheckboxes()"
+          />
+          <span class="password-toggle" onclick="togglePasswordVisibility()">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="checkbox-popup" id="checkboxPopup">
+          <label for="lowercase" class="checkbox-label">
+            <input type="checkbox" id="lowercase" disabled /> At least one
+            lowercase letter </label
+          ><br />
+          <label for="uppercase" class="checkbox-label">
+            <input type="checkbox" id="uppercase" disabled /> At least one
+            uppercase letter </label
+          ><br />
+          <label for="number" class="checkbox-label">
+            <input type="checkbox" id="number" disabled /> At least one number </label
+          ><br />
+          <label for="special" class="checkbox-label">
+            <input type="checkbox" id="special" disabled /> At least one special
+            character </label
+          ><br />
+          <label for="min8" class="checkbox-label">
+            <input type="checkbox" id="min8" disabled /> At least 8 characters
+            long
+          </label>
+        </div>
+      </form>
+      <button
+        type="button"
+        onclick="togglePasswordVisibility()"
+        class="show-password-btn"
+      >
+        Show Password
+      </button>
 
       <div class="checkbox">
         <label><input type="checkbox" name="remember" /> Remember me</label>

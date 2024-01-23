@@ -31,7 +31,7 @@ export class HeaderComponent {
     this._router.navigate(['/teammember'])
   }
   gotoContact(){
-    this._router.navigate(['/contactus'])
+    this._router.navigate(['/contact'])
   }
   gotoHome(){
     this._router.navigate(['/home'])

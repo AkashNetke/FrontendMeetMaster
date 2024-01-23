@@ -13,14 +13,6 @@ export class FooterComponent {
 
   constructor( private _router : Router){}
 
-
-  gotologinsuccess(){
-    this._router.navigate(['/loginsuccess'])
-
-  }
-  gotoregistration(){
-    this._router.navigate(['/registration'])
-  }
   gotoAbout(){
     this._router.navigate(['/about'])
   }
@@ -35,12 +27,5 @@ export class FooterComponent {
   }
   gotoHome(){
     this._router.navigate(['/home'])
-  }
-  gotologin(){
-    this._router.navigate(['/login'])
-  }
-  gotoRegister(){
-    this._router.navigate(['/registration'])
-  }
-
+}
 }
